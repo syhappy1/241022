@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>操作节点</title>
+    <script>
+        function replace(){
+            let oop=document.getElementsByTagName('p')[0];
+            let ooop=document.createElement('p')
+            let atext=document.createTextNode('hahahaha')
+            ooop.appendChild(atext);
+            oop.parentNode.replaceChild(ooop,oop);
+
+        }
+
+       function createp(){
+        let op=document.createElement('p')
+        let otext=document.createTextNode('霜机')
+        op.appendChild(otext)
+        document.body.appendChild(op)
+        
+       }
+    </script>
+</head>
+<body onclick="replace()">
+    
+    <p>啊吧啊吧啊吧啊吧</p>
+    
+</body>
+</html>
